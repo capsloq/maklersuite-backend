@@ -54,7 +54,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::makler.makler",
-      "inversedBy": "immobilies"
+      "inversedBy": "immobilien"
     }
   }
 }

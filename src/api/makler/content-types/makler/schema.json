@@ -4,7 +4,8 @@
   "info": {
     "singularName": "makler",
     "pluralName": "maklers",
-    "displayName": "Makler"
+    "displayName": "Makler",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -33,7 +34,7 @@
       "min": 0,
       "default": 3
     },
-    "immobilies": {
+    "immobilien": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::immobilie.immobilie",
