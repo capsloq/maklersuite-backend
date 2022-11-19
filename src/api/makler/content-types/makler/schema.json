@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "maklers",
+  "info": {
+    "singularName": "makler",
+    "pluralName": "maklers",
+    "displayName": "Makler"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "maklerbuero": {
+      "type": "string"
+    },
+    "anrede": {
+      "type": "enumeration",
+      "enum": [
+        "herr",
+        "frau"
+      ]
+    },
+    "vorname": {
+      "type": "string"
+    },
+    "nachname": {
+      "type": "string"
+    },
+    "sterne": {
+      "type": "integer",
+      "max": 5,
+      "min": 0,
+      "default": 3
+    },
+    "immobilies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::immobilie.immobilie",
+      "mappedBy": "makler"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "immobilen",
+  "info": {
+    "singularName": "immobilie",
+    "pluralName": "immobilen",
+    "displayName": "Immobilie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ueberschrift": {
+      "type": "string"
+    },
+    "strasse": {
+      "type": "string"
+    },
+    "hausnummer": {
+      "type": "string"
+    },
+    "plz": {
+      "type": "string"
+    },
+    "ort": {
+      "type": "string"
+    },
+    "kaltmiete": {
+      "type": "decimal"
+    },
+    "warmmiete": {
+      "type": "decimal"
+    },
+    "flaeche": {
+      "type": "integer"
+    },
+    "zimmer": {
+      "type": "decimal"
+    },
+    "bilder": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "makler": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::makler.makler",
+      "inversedBy": "immobilies"
+    }
+  }
+}
