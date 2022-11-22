@@ -9,12 +9,16 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "optionalDependencies": {
+    "sharp": "^0.31.2"
+  },
+
   "dependencies": {
-    "@strapi/strapi": "4.5.1",
-    "@strapi/plugin-users-permissions": "4.5.1",
     "@strapi/plugin-i18n": "4.5.1",
-    "better-sqlite3": "7.4.6"
+    "@strapi/plugin-users-permissions": "4.5.1",
+    "@strapi/strapi": "4.5.1",
+    "better-sqlite3": "7.4.6",
+
   },
   "author": {
     "name": "A Strapi developer"
