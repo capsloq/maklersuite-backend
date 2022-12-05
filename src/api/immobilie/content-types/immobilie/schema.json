@@ -55,6 +55,17 @@
       "relation": "manyToOne",
       "target": "api::makler.makler",
       "inversedBy": "immobilien"
+    },
+    "wohnungsytp": {
+      "type": "enumeration",
+      "enum": [
+        "haus",
+        "wohnung",
+        "tauschwohnung",
+        "agrarfläche",
+        "baugrund"
+      ],
+      "default": "wohnung"
     }
   }
 }
