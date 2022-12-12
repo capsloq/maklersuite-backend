@@ -39,6 +39,11 @@
       "relation": "oneToMany",
       "target": "api::immobilie.immobilie",
       "mappedBy": "makler"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }
